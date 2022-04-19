@@ -4,7 +4,7 @@
 }
 
 body{  /*posição da imagem do body*/
-    background-image: url(../Calculadora/fundo.png);  /*IMAGEM DE FUNDO, PODERIA SER UMA COR */
+    background-image: url(fundo.png);  /*IMAGEM DE FUNDO, PODERIA SER UMA COR */
     background-repeat: no-repeat; /*PARA NÃO SE REPETIR*/
     background-attachment: fixed;  /*SER IMAGEM FIXA*/
     background-size: cover; 

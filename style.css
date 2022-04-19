@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{  /*posição da imagem do body*/
+    background-image: url(../Calculadora/fundo.png);  /*IMAGEM DE FUNDO, PODERIA SER UMA COR */
+    background-repeat: no-repeat; /*PARA NÃO SE REPETIR*/
+    background-attachment: fixed;  /*SER IMAGEM FIXA*/
+    background-size: cover; 
+    background-position: center;    /*CENTRALIZADA*/
+}
+
+.Fundo{/* DO TITULO QUE CRIAMOS*/
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora{
+    border: 1px solid rgb(59, 218, 230);
+    position: absolute;                 /*posição absoluta */
+    background-color: rgba(9, 9, 138, 0.61);
+    top: 50%;         /*CENTRALIZANDO A BOX QUE CRIAMOS*/
+    left: 50%;
+    transform: translate(-50%, -50%);    /*centralizando*/
+    border-radius: 15px;              /* arredondar as bordas*/
+    padding: 15px;                  /*DANDO ESPAÇO DA BOX DO CONTEUDO*/
+    text-align: center;
+    color: rgb(59, 218, 230, 60%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{ /*TRABALHANDO BOTOES */
+    width: 50px;  /*LARGURA*/
+    height: 50px; /*ALTURA*/
+    font-size: 25px; /*FONTE*/
+    margin: 3px;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+    color: rgb(0, 5, 5);
+}
+
+.botao:hover{
+    background-color: blue;
+}
+
+#resultado{   /*ID SE IDENTIFICA COM # */
+    width: 211px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: beige;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

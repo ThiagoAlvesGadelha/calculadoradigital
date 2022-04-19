@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Aparencia.css">
+</head>
+<body>  <!-- AQUI PODEMOS COLOCAR NOSSA IMAGEM NO CSS E POSICIONAR NA NOSSA VIEWPORT -->
+    <div class="Fundo">
+       <!-- <h1>Thiago Alves</h1> -->
+    </div>
+        <!-- AQUI CRIAMOS UMA DIV , COM UMA CLASSE PARA TRABALHARMOS ELA NO CSS-->
+    <div class="calculadora">   <!--DAREMOS UM NOME AO , EM SEGUIDA UM ESPAÇO PARA RECEBER O RESULTADO-->
+        <h1>Calculadora</h1>
+        <p id="resultado"></p> <!--IREMOS TRABALHAR COM LINHAS E COLUNAS , ESTILO TABELA-->
+        <table>
+            <tr> <!--LINHA-->           <!--USAR A TAG BUTTON PARA CRIAR BOTOES-->
+                <td><button class="botao" onclick= "clean()">C</button></td> <!--COLUNAS-->
+                <td><button class="botao" onclick="back()">¬</button></td> <!--LEMBRAR DE ADCIONAR UMA CLASSE -->
+                <td><button class="botao" onclick="insert('/')">/</button></td>   <!--PARA TRABALHAR OS BOTOES-->
+                <td><button class="botao" onclick="insert('*')">X</button></td>
+            
+            </tr>
+            <tr>     <!--onclick para quando clicar nos botoes ele executar a funçao insert criada no js-->
+                <td><button class="botao" onclick="insert('7')">7</button></td>
+                <td><button class="botao" onclick="insert('8')">8</button></td>
+                <td><button class="botao" onclick="insert('9')">9</button></td>
+                <td><button class="botao" onclick="insert('-')">-</button></td>
+            
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="insert('4')">4</button></td>
+                <td><button class="botao" onclick="insert('5')">5</button></td>
+                <td><button class="botao" onclick="insert('6')">6</button></td>
+                <td><button class="botao" onclick="insert('+')">+</button></td>
+            
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="insert('1')">1</button></td>
+                <td><button class="botao" onclick="insert('2')">2</button></td>
+                <td><button class="botao" onclick="insert('3')">3</button></td>
+                <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>                  <!-- FAZER O BOTAO OCUPAR 2 LINHAS/ STYLE PARA AUMENTAR BOTAO-->
+            
+            </tr>
+            <tr>
+                <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>                       <!--FAZENDO O BOTAO OCUPAR 2 COLUNAS// STYLE PARA AUMENTAR BOTAO-->
+                <td><button  class="botao" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="../Calculadora/Funcionalidade.js"></script>
+</body>
+</html>
+
+<script>
+ 
+    
+</script>
